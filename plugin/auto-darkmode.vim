@@ -1,5 +1,5 @@
 " Vim global plugin to set background during macOS dark mode
-" Last Change: 2019 Jan 10
+" Last Change: 2019 Jan 17
 " Maintainer: John Elliott <john@primitivemachine.com>
 " License: This file is placed in the public domain.
 
@@ -14,5 +14,5 @@ endfunc
 if v:vim_did_enter
   call SetDarkMode()
 else
-  au VimEnter * call SetDarkMode()
+  au ColorSchemePre * call SetDarkMode()
 endif
